@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Patrón detallado que incluye la fecha, el nivel de log, el logger y el mensaje -->
+            <pattern>%date{ISO8601} [%level] [%logger{36}] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Nivel de log ajustado a 'debug' para mostrar más detalles -->
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- Logger específico para un paquete con nivel 'debug' -->
+    <logger name="com.mypackage" level="debug">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+</configuration>
