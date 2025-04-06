@@ -9,9 +9,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import gb.zona_fit.modelo.Cliente;
 import gb.zona_fit.servicio.IClienteServicio;
-import lombok.experimental.var;
 
-@SpringBootApplication
+
+//@SpringBootApplication
 public class ZonaFitApplication implements CommandLineRunner {
 
     @Autowired
